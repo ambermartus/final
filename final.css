@@ -4,3 +4,11 @@ quiz.style.display = "block";
 renderProgress(); 
 renderCounter();
 TIMER = setInterval(renderCounter,1000); 
+::backdrop = linearGradient 
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: white;
+    text-align: center
+}
