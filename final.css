@@ -1,0 +1,6 @@
+start.style.display = "none"; 
+renderQuestion(); 
+quiz.style.display = "block";
+renderProgress(); 
+renderCounter();
+TIMER = setInterval(renderCounter,1000); 
