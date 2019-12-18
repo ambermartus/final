@@ -53,7 +53,7 @@ let questions = [
 
         choiceA : "humerus",
 
-        choiceB : "sacrum",
+        choiceB : "sternum",
 
         choiceC : "clavicle",
 
@@ -61,21 +61,48 @@ let questions = [
 
     },{
 
-        question : "What does JS stand for?",
+        question : "Which part of the skeletal system is represented by M?",
 
         imgSrc : "https://i.pinimg.com/originals/4f/93/4e/4f934ead9d447dcdff81fe77f269b053.jpg",
 
-        choiceA : "Wrong",
+        choiceA : "Sacrum",
 
-        choiceB : "Wrong",
+        choiceB : "Patella",
 
-        choiceC : "Correct",
+        choiceC : "Pelvis",
 
         correct : "C"
 
+    },{
+
+        question : "Which part of the skeletal system is represented by J?",
+
+        imgSrc : "https://i.pinimg.com/originals/4f/93/4e/4f934ead9d447dcdff81fe77f269b053.jpg",
+
+        choiceA : "Clavicle",
+
+        choiceB : "Scapula",
+
+        choiceC : "Ulna",
+
+        correct : "A"
+    },{
+
+        question : "Which part of the skeletal system is represented by C?",
+
+        imgSrc : "https://i.pinimg.com/originals/4f/93/4e/4f934ead9d447dcdff81fe77f269b053.jpg",
+
+        choiceA : "Fibia",
+
+        choiceB : "Mandible",
+
+        choiceC : "Phalanges",
+
+        correct : "B"
     }
 
 ];
+
 const lastQuestion = questions.length - 1;
 
 let runningQuestion = 0;
@@ -83,20 +110,13 @@ let runningQuestion = 0;
 function renderQuestion(){
 
     let q = questions[runningQuestion];
-
-   
-
     question.innerHTML = "<p>"+ q.question +"</p>";
-
     qImg.innerHTML = "<img src="+ q.imgSrc +">";
-
     choiceA.innerHTML = q.choiceA;
-
     choiceB.innerHTML = q.choiceB;
-
     choiceC.innerHTML = q.choiceC;
-
 }
+
 function renderProgress(){
 
     for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
